@@ -8,7 +8,7 @@ export default function Home() {
 
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearch = (e) => {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
 
     const term = e.target.value;
     const termCapitalize = term.charAt(0).toUpperCase() + term.slice(1);

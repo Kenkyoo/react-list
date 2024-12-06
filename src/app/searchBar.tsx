@@ -1,4 +1,8 @@
-const SearchBar = ({handleSearch}) => {
+interface HandleProps {
+  handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const SearchBar = ({handleSearch} : HandleProps) => {
     return (  
     <div className="w-96 mx-auto">  
       <label className="input input-bordered flex items-center gap-2">

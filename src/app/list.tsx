@@ -1,6 +1,10 @@
 import data from '../../data.json'
 
-export default function List({props}) {
+interface ListProps  {
+  props : string;
+}
+
+export default function List({props} : ListProps) {
 
     const filterProducts = data.filter(item => 
         item.product.includes(props)
